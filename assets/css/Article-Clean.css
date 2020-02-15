@@ -82,3 +82,15 @@
   max-width: 100%;
 }
 
+#institution > img {
+  height: 3rem;
+}
+
+#institution {
+  text-align: center;
+}
+
+#institution > p {
+  font-size: smaller;
+}
+
