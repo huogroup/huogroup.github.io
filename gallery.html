@@ -3,6 +3,20 @@
 
 <head>
     <meta charset="utf-8">
+<script>
+var fixHref = function(i){
+    imgDiv = document.getElementsByClassName("ImgBOX")[0].getElementsByClassName("item")[i]
+    imgsrc = imgDiv.getElementsByTagName("img")[0].src;
+
+    document.getElementsByClassName("ImgBOX")[0].getElementsByClassName("item")[i].getElementsByTagName("a")[0].href = imgsrc ; 
+
+}
+
+var fixImgLinks = function() {
+for (let i = 0; i < document.getElementsByClassName("ImgBOX")[0].getElementsByClassName("item").length; i++) {
+fixHref(i);}
+}
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Gallery - Huo Group</title>
     <meta property="og:image" content="../assets/img/groupgreen.png">
@@ -18,7 +32,7 @@
     <link rel="stylesheet" href="assets/css/Team-Clean.css">
 </head>
 
-<body>
+<body onload="fixImgLinks()">
     <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
         <div class="container"><a class="navbar-brand logo" href="https://huogroup.github.io/"><img src="assets/img/huogroup.png" style="height: 1.5rem;"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -43,7 +57,7 @@
                 <div class="block-heading">
                     <h2 class="text-info">Gallery</h2>
                 </div>
-                <div class="row">
+                <div class="row ImgBOX">
                     <div class="col-md-6 col-lg-4 item"><a class="lightbox" href="assets/img/SutirthaHuo.png"><img class="img-thumbnail img-fluid image" src="assets/img/Duncan_Farewell.png"></a></div>
                     <div class="col-md-6 col-lg-4 item"><a class="lightbox" href="assets/img/SutirthaHuo.png"><img class="img-thumbnail img-fluid image" src="assets/img/NERM_dinner.png"></a></div>
                     <div class="col-md-6 col-lg-4 item"><a class="lightbox" href="assets/img/SutirthaHuo.png"><img class="img-thumbnail img-fluid image" src="assets/img/NERM_2022.jpg"></a></div>
