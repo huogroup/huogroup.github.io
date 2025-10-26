@@ -2,6 +2,10 @@
   margin-top: 0rem !important;
 }
 
+.mt-2 {
+  margin-top: 0.5rem !important;
+}
+
 .mt-4 {
   margin-top: 1.5rem !important;
 }
@@ -26,6 +30,10 @@
   padding-top: 0rem !important;
 }
 
+.pr-0 {
+  padding-right: 0rem !important;
+}
+
 .pr-4 {
   padding-right: 1.5rem !important;
 }
@@ -36,5 +44,9 @@
 
 .pb-3 {
   padding-bottom: 1rem !important;
+}
+
+.pl-0 {
+  padding-left: 0rem !important;
 }
 
