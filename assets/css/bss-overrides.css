@@ -54,6 +54,10 @@
   padding-top: 0rem !important;
 }
 
+.pt-3 {
+  padding-top: 1rem !important;
+}
+
 .pr-0 {
   padding-right: 0rem !important;
 }
@@ -76,6 +80,10 @@
 
 .pb-3 {
   padding-bottom: 1rem !important;
+}
+
+.pb-4 {
+  padding-bottom: 1.5rem !important;
 }
 
 .pl-0 {
